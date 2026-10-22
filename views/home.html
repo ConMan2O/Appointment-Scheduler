@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts\appointment-scheduler.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     // Form containing First Name, Last Name, Date, Time, and a Submit button
-    <form action="/submit" method="POST">
+    <form id="scheduler-form" action="/submit" method="POST">
         <label for="firstName">First Name:</label>
-        <input type="text" id="firstName" name="firstName" required>
+        <input type="text" id="fname" name="fname">
+        <span class="error" id="error-fname">First name is required</span>
 
         <label for="lastName">Last Name:</label>
-        <input type="text" id="lastName" name="lastName" required>
+        <input type="text" id="lname" name="lname">
+        <span class="error" id="error-lname">Last name is required</span>
 
         <label for="date">Date:</label>
-        <input type="date" id="date" name="date" required>
+        <input type="date" id="date" name="date">
 
         <label for="time">Time:</label>
-        <input type="time" id="time" name="time" required>
+        <input type="time" id="time" name="time">
 
         <button type="submit">Submit</button>
     </form>
