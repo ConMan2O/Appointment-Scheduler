@@ -32,7 +32,14 @@ button[type="submit"]:hover {
     cursor: pointer;
 }
 
+.field-container{
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+}
+
 .error {
     color: var(--error-font-color);
     display: none;
 }
+
