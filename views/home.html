@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="scripts/appointment-scheduler.js" defer></script>
-    <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="scripts/appointment-scheduler.js" defer></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Document</title>
 </head>
+
 <body>
+  <div id="main">
     // Form containing First Name, Last Name, Date, Time, and a Submit button
     <form id="scheduler-form" action="/submit" method="POST">
+      <div class="field-container">
         <label for="firstName">First Name:</label>
         <input type="text" id="fname" name="fname">
         <span class="error" id="error-fname">First name is required</span>
+      </div>
 
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lname" name="lname">
-        <span class="error" id="error-lname">Last name is required</span>
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lname" name="lname">
+      <span class="error" id="error-lname">Last name is required</span>
 
-        <label for="date">Date:</label>
-        <input type="date" id="date" name="date">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date">
 
-        <label for="time">Time:</label>
-        <input type="time" id="time" name="time">
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time">
 
-        <button type="submit">Submit</button>
+      <button type="submit">Submit</button>
     </form>
-        
-        
+  </div>
+
 </body>
+
 </html>
