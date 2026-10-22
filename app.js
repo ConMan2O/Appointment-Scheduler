@@ -28,7 +28,7 @@ app.post('/submit', (req, res) => {
 
     console.log(data);
 
-    formdata.push(data);
+    appointments.push(data);
     console.log(appointments);
 
     res.sendFile(`${import.meta.dirname}/views/confirm.html`);
