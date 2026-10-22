@@ -2,16 +2,32 @@
     box-sizing: border-box;
 }
 
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --error-font-color: red;
+}
+
 #main {
     width: 30%;
     margin: 0 auto;
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
     border-radius: 1rem;
-    display: flex;
-    flex-direction: column;
+}
+
+button[type="submit"] {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border-radius: 1rem;
+    border: none;
+}
+
+button[type="submit"]:hover {
+    cursor: pointer;
 }
 
 .error {
-    color: red;
+    color: var(--error-font-color);
     display: none;
 }
