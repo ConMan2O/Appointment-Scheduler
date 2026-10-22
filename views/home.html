@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-    // Form containing First Name, Last Name, Date, Time, and a Submit button
     <form id="scheduler-form" action="/submit" method="POST">
         <label for="firstName">First Name:</label>
         <input type="text" id="fname" name="fname">
@@ -18,10 +17,10 @@
         <input type="text" id="lname" name="lname">
         <span class="error" id="error-lname">Last name is required</span>
 
-        <label for="date">Date:</label>
+        <label for="date">Meeting Date:</label>
         <input type="date" id="date" name="date">
 
-        <label for="time">Time:</label>
+        <label for="time">Meeting Time:</label>
         <input type="time" id="time" name="time">
 
         <button type="submit">Submit</button>
