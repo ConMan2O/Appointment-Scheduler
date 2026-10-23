@@ -4,40 +4,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JavaScript -->
   <script src="scripts/appointment-scheduler.js" defer></script>
+
+  <!-- Stylesheet -->
   <link rel="stylesheet" href="styles/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="images/favicon.png">
+
   <title>Document</title>
 </head>
 
 <body>
   <div id="main">
-    <h1>Appoinment Scheduler</h1>
+    <h1>Appointment Scheduler</h1>
     <form id="scheduler-form" action="/submit" method="POST">
         
-        <h2>Book An Appointment</h2>
+        <h2>Book an Appointment</h2>
       <div class="field-container">
-        <label for="firstName">First Name:</label>
-        <input type="text" id="fname" name="fname">
+        <label for="firstName" class="field-label">First Name:</label>
+        <input type="text" id="fname" class="input-field" name="fname" placeholder="Jane">
         <span class="error" id="error-fname">First name is required</span>
       </div>
 
       <div class="field-container">
-        <label for="lastName">Last Name:</label>
-        <input type="text" id="lname" name="lname">
+        <label for="lastName" class="field-label">Last Name:</label>
+        <input type="text" id="lname" class="input-field" name="lname" placeholder="Doe">
         <span class="error" id="error-lname">Last name is required</span>
       </div>
 
       <div class="field-container">
-        <label for="date">Meeting Date:</label>
-        <input type="date" id="date" name="date">
+        <label for="date" class="field-label">Meeting Date:</label>
+        <input type="date" id="date" class="input-field" name="date">
       </div>
 
       <div class="field-container">
-        <label for="time">Meeting Time:</label>
-        <input type="time" id="time" name="time">
+        <label for="time" class="field-label">Meeting Time:</label>
+        <input type="time" id="time" class="input-field" name="time">
       </div>
 
-      <button type="submit">Book Appoinment</button>
+      <button type="submit">Book Appointment</button>
     </form>
   </div>
 

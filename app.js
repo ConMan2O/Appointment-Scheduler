@@ -18,10 +18,6 @@ app.get('/confirm', (req, res) => {
     res.sendFile(`${import.meta.dirname}/views/confirm.html`);
 });
 
-app.get('/admin', (req, res)=>{
-    res.send(appointments);
-});
-
 app.post('/submit', (req, res) => {
     const data = req.body;
     appointments['timestamp'] = new Date();
@@ -32,6 +28,10 @@ app.post('/submit', (req, res) => {
     console.log(appointments);
 
     res.sendFile(`${import.meta.dirname}/views/confirm.html`);
+});
+
+app.get('/admin', (req, res)=>{
+    res.send(appointments);
 });
 
 app.listen(PORT, () => {
